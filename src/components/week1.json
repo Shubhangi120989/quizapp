@@ -1,56 +1,98 @@
 [
-    {
-      "id": 0,
-      "question": "Which of the following is the output of the given code segment?",
-      "questionImage": "./images/q1.png",
-      "multicorrect":false,
-      "options": [
-        { 
-          "id": 1, 
-          "text": "Paris", 
-          "isCorrect": true,
-          "image": ""
-        },
-        { 
-          "id": 2, 
-          "text": "London", 
-          "isCorrect": false,
-          "image": ""
-        },
-        { 
-          "id": 3, 
-          "text": "Berlin", 
-          "isCorrect": false,
-          "image": ""
-        }
-      ],
-      "correct": false
-    },
-    {
-      "id": 1,
-      "question": "Which of the following are mammals?",
-      "questionImage": "",
-      "multicorrect":true,
-      "options": [
-        { 
-          "id": 1, 
-          "text": "Elephant", 
-          "isCorrect": true,
-          "image": ""
-        },
-        { 
-          "id": 2, 
-          "text": "Blue Whale", 
-          "isCorrect": true,
-          "image": ""
-        },
-        { 
-          "id": 3, 
-          "text": "Turtle", 
-          "isCorrect": false,
-          "image": ""
-        }
-      ],
-      "correct": false
-    }
-  ]
+  {
+    "id": 0,
+    "question": "Which of the following is the output of the given code segment?",
+    "questionImage": "/images/q1.png",
+    "multicorrect":false,
+    "options": [
+      { 
+        "id": 1, 
+        "text": "[5,'AAA',[2, 3]]", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 2, 
+        "text": "[5,'AAA',[2, 3]]", 
+        "isCorrect": true,
+        "image": ""
+      },
+      { 
+        "id": 3, 
+        "text": "[5,'AAA',2,3]", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 4, 
+        "text": "error", 
+        "isCorrect": false,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "question": "Assume you have to roll a dice with six faces. Choose the statement to simulate the same",
+    "questionImage": "",
+    "multicorrect":false,
+    "options": [
+      { 
+        "id": 1, 
+        "text": "random.randint(1, 6)", 
+        "isCorrect": true,
+        "image": ""
+      },
+      { 
+        "id": 2, 
+        "text": "random.randrange(1, 8)", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 3, 
+        "text": "random.randint(1, 7)", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 4, 
+        "text": "random.randrange(1,6)", 
+        "isCorrect": false,
+        "image": ""
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "question": "Select the code to create the given dictionary:\n{1 : 2, 2 : 4, 3 : 6, 4 : 8, 5 : 10, 6 : 12, 7 : 14, 8 : 16, 9 : 18}",
+    "questionImage": "",
+    "multicorrect":false,
+    "options": [
+      { 
+        "id": 1, 
+        "text": "d={x:x**2 for x in range(1,10)}\nprint(d)", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 2, 
+        "text": "d={x:x*2 for x in range(1,9)}\nprint(d)", 
+        "isCorrect": false,
+        "image": ""
+      },
+      { 
+        "id": 3, 
+        "text": "d={x:x*2 for x in range(1,10)}\nprint(d)", 
+        "isCorrect": true,
+        "image": ""
+      },
+      { 
+        "id": 4, 
+        "text": "d={x:x**2 for x in range(1,9)}\nprint(d)", 
+        "isCorrect": false,
+        "image": ""
+      }
+    ]
+  }
+]
