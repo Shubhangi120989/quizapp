@@ -1,18 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 
 function Question({ question, handleOptionSelect, handleSubmit, selectedOptions, showResult, isCorrect }) {
   const isSingleCorrect = !question.multicorrect;
-
-  useEffect(() => {
-    const shuffleArray = (array) => {
-      for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-      }
-      return array;
-    };
-    question.options = shuffleArray(question.options);
-  },[])
 
   return (
     <div className="bg-gradient-to-b from-purple-900 to-blue-900 text-white font-serif p-6 rounded-lg shadow-lg">

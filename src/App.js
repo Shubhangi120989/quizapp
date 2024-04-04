@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import Quiz from './components/Quiz.jsx';
 import Week from './components/Week.jsx';
 import week1 from './components/week1.json'; 
-import week2 from './components/samplequestion.json';
-import week3 from './components/samplequestion.json';
+import week2 from './components/week2.json';
+import week3 from './components/week3.json';
 import week4 from './components/samplequestion.json';
 import week5 from './components/samplequestion.json';
 import week6 from './components/samplequestion.json';
@@ -52,6 +52,9 @@ function App() {
           break;
         default:
           selectedWeekData = week1;
+      }
+      for (let i = 0; i < selectedWeekData.length; i++) {
+        selectedWeekData[i].options = shuffleArray(selectedWeekData[i].options);
       }
       setJsonData(shuffleArray(selectedWeekData));
     };
