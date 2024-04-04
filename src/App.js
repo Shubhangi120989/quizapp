@@ -3,7 +3,7 @@ import Quiz from './components/Quiz.jsx';
 import Week from './components/Week.jsx';
 import week1 from './components/week1.json'; 
 import week2 from './components/week2.json';
-import week3 from './components/samplequestion.json';
+import week3 from './components/week3.json';
 import week4 from './components/samplequestion.json';
 import week5 from './components/samplequestion.json';
 import week6 from './components/samplequestion.json';
