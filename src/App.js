@@ -4,11 +4,11 @@ import Week from './components/Week.jsx';
 import week1 from './components/week1.json'; 
 import week2 from './components/week2.json';
 import week3 from './components/week3.json';
-import week4 from './components/samplequestion.json';
-import week5 from './components/samplequestion.json';
-import week6 from './components/samplequestion.json';
-import week7 from './components/samplequestion.json';
-import week8 from './components/samplequestion.json';
+import week4 from './components/week4.json';
+import week5 from './components/week5.json';
+import week6 from './components/week6.json';
+import week7 from './components/week7.json';
+import week8 from './components/week8.json';
 import week9 from './components/samplequestion.json';
 import week10 from './components/samplequestion.json';
 
