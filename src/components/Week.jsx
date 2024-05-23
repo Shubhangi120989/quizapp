@@ -9,7 +9,7 @@ export default function Week({ updateSelected }) {
     <div className="bg-gradient-to-b from-purple-900 to-blue-900 min-h-screen flex flex-col justify-center items-center text-white font-serif">
       <h1 className="text-5xl font-bold mb-8">NPTEL</h1>
       <div className="flex flex-col space-y-4">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map(weekNumber => (
+        {[1, 2, 3, 4, 5, 6, 7, 8].map(weekNumber => (
           <WeekItem
             key={weekNumber}
             weekNumber={weekNumber}

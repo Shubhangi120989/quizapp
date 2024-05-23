@@ -23,7 +23,7 @@ function Question({ question, handleOptionSelect, handleSubmit, selectedOptions,
       <button className="mt-6 px-6 py-3 bg-white text-purple-900 font-bold rounded hover:bg-opacity-80 transition duration-300 ease-in-out" onClick={handleSubmit}>Save</button>
       {showResult && (
         <div className="mt-4">
-          {isCorrect ? <p className="text-green-500">Correct!</p> : <p className="text-red-500">Incorrect!</p>}
+          {isCorrect ? <p className="text-green-050">Correct!</p> : <p className="text-red-500">Incorrect!{} </p>}
         </div>
       )}
     </div>
