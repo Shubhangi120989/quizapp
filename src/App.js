@@ -9,10 +9,7 @@ import week5 from './components/week5.json';
 import week6 from './components/week6.json';
 import week7 from './components/week7.json';
 import week8 from './components/week8.json';
-import week9 from './components/week9.json';
-import week10 from './components/week10.json';
-import week11 from './components/week11.json';
-import week12 from './components/week12.json';
+
 
 function App() {
   const [weekSelected, setWeekSelected] = useState(-2);
@@ -46,18 +43,7 @@ function App() {
         case 8:
           selectedWeekData = week8;
           break;
-        case 9:
-          selectedWeekData = week9;
-          break;
-        case 10:
-          selectedWeekData = week10;
-          break;
-        case 11:
-          selectedWeekData = week11;
-          break;
-        case 12:
-          selectedWeekData = week12;
-          break;
+      
         default:
           selectedWeekData = week1;
       }
