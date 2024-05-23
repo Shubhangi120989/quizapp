@@ -7,7 +7,7 @@
     "options": [
       { 
         "id": 1, 
-        "text": "[5,'AAA',[2, 3]]", 
+        "text": "[5,AAA,[2, 3]]", 
         "isCorrect": false,
         "image": ""
       },

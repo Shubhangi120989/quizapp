@@ -23,7 +23,22 @@ function Question({ question, handleOptionSelect, handleSubmit, selectedOptions,
       <button className="mt-6 px-6 py-3 bg-white text-purple-900 font-bold rounded hover:bg-opacity-80 transition duration-300 ease-in-out" onClick={handleSubmit}>Save</button>
       {showResult && (
         <div className="mt-4">
-          {isCorrect ? <p className="text-green-050">Correct!</p> : <p className="text-red-500">Incorrect!{} </p>}
+          {isCorrect ? <p className="text-green-500">Correct!</p> : 
+          <>
+            <p className="text-red-500">Incorrect! </p>
+            <ul>
+              {question.options.map((option)=>{
+                if (option.isCorrect)
+                return <li>
+                  <span className="ml-4 text-2xl">{option.text}</span>
+                  {option.image && <img src={option.image} alt="Option" className="w-24 h-24 object-cover ml-4" />}
+                </li>
+              })}
+            </ul>
+   
+
+          </>
+          }
         </div>
       )}
     </div>
